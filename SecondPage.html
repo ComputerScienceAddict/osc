@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <a class="Button2">Whatever this is</a>
+    <a class="Button3" href="ThirdPage.html">The Bateman</a>
+
+    <style>
+        html{
+            background-image: url("/gifs/2819244.jpg");
+        }
+        html,body {
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+      }
+      .Button2,.Button3{
+          color: rgb(4, 190, 252);
+          border: 5px gray;
+          display:inline-block;
+          border-radius: 3px;
+          left: 5px;
+          background: white;
+          display: inline;
+          margin: 15px auto 0 auto;
+      }
+
+      .Button2{
+        left: 5px;
+      }
+      .Button3{
+        left: 125px;
+      }
+      a{
+        position: absolute;
+        display: inline;
+      }
+      .Button1:hover{
+          color: orange;
+      }
+      a:hover{
+          color: orange;
+      }
+      .box-one{
+        position: center;
+        top: 200px;
+        left:0px;
+        transition: all .5s linear;
+    }
+    .box-two{
+        position: center;
+        top: 350px;
+        left:0px;
+        transition: all 1s linear;
+    }
+    .box-three{
+        position: center;
+        top: 525px;
+        left:0px;
+        transition: all .5s linear;
+    }
+
+
+    div:hover{
+         width:400px;
+
+    }
+    div{
+        border-radius: 3px;
+        position: absolute;
+        width: 200px;
+        background-color:green;
+        padding: 50px;
+        margin: 0px;
+        border: 1px solid gray;
+    }
+
+    h1{
+        position:absolute;
+        text-align:center;
+        font-weight: bold;
+    }
+
+    </style>
+  </head>
+  <img id="pppp" src="graph.jpg">
+  <h1 class="absolute text-white text-center" style="top: 10%; transform: translate(-50%, -50%); left: 50%;">Top Donors to presidential canidates</h1>
+  <div class="box-one">Chevron Corp</div>
+  <div class="box-two">Occidental Petroleum</div>
+  <div class="box-three">Devon Energy</div>
+  <body>
+    <script type="module" src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  </body>
+</html>

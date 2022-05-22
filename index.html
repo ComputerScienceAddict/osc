@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+    <script>
+      var x = document.getElementById("sound");
+    function playAudio() {
+      x.play();
+    }
+
+    function pauseAudio() {
+      x.pause();
+    }
+    playAudio();
+    </script>
+    
+    <style>
+      .absolute{
+        position: absolute;
+        z-index: 1;
+      }
+      html,body {
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+      }
+      video{
+        position: absolute;
+        z-index: 0;
+      }
+      .font-exo{
+
+          background-image: url('/gifs/waste-collage.jpg');
+          opacity: 1;
+      }
+      p:hover{
+        opacity: 0;
+      }
+      a:hover{
+          color: orange;
+      }
+      video{
+        width: 100%
+      }
+    </style>
+  </head>
+  
+  <body>
+    <video preload="auto" loop autoplay>
+      <source src="bush.mp4" type="video/mp4">
+    </video>
+    <audio id="sound" src="bushh.mp3"></audio>
+    <div
+    class="absolute text-white text-center"
+    style="top: 50%; transform: translate(-50%, -50%); left: 50%;"
+  >
+
+    <h1 class="font-space-mono text-sm uppercase tracking-wide">
+      e.l.i.s.e
+    </h1>
+    <p class="font-exo text-8xl color:black">
+      untitled
+    </p>
+    <a
+      href="SecondPage.html"
+      class="border px-4 py-2 rounded-lg text-sm text-black font-space-mono uppercase mt-8 hover:bg-white hover:text-gray-800 inline-block"
+    >
+      Get Started
+    </a>
+    
+
+
+  </div>
+  </body>
+</html>
